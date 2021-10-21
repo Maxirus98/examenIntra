@@ -1,10 +1,9 @@
 package com.examenintraprojet.repositories;
 
-import com.examenintraprojet.models.User;
+import com.examenintraprojet.models.Game;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, String> {
-    public User findUserByEmail(String email);
+public interface GameRepository extends JpaRepository<Game, Integer> {
 }
